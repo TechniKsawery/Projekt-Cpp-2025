@@ -1,0 +1,12 @@
+# ninja log v6
+7	402	7662756897865148	CMakeFiles/menedzer_zadan.dir/main.cpp.obj	7087edef8769750a
+3	521	7662756897865148	CMakeFiles/menedzer_zadan.dir/funkcje.cpp.obj	5b3f7c87da5d930c
+521	665	7662756903046445	menedzer_zadan.exe	9cc35f8ab0eabcc1
+7	414	7662760149720860	CMakeFiles/menedzer_zadan.dir/main.cpp.obj	7087edef8769750a
+414	534	7662760153789601	menedzer_zadan.exe	9cc35f8ab0eabcc1
+7	400	7662760574093614	CMakeFiles/menedzer_zadan.dir/main.cpp.obj	7087edef8769750a
+400	503	7662760578026451	menedzer_zadan.exe	9cc35f8ab0eabcc1
+24	546	7662797040013290	CMakeFiles/menedzer_zadan.dir/main.cpp.obj	7087edef8769750a
+547	728	7662797045231913	menedzer_zadan.exe	9cc35f8ab0eabcc1
+129	1065	7663348352887204	CMakeFiles/menedzer_zadan.dir/main.cpp.obj	7087edef8769750a
+1066	1630	7663348362259080	menedzer_zadan.exe	9cc35f8ab0eabcc1
