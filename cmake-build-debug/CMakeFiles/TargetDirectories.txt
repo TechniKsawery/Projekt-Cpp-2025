@@ -1,3 +1,3 @@
-C:/Users/KsaweryBloch/Projekt cpp 2025/menedzer zadan/cmake-build-debug/CMakeFiles/menedzer_zadan.dir
-C:/Users/KsaweryBloch/Projekt cpp 2025/menedzer zadan/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/KsaweryBloch/Projekt cpp 2025/menedzer zadan/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/TechDay.TS-00029/CLionProjects/Projekt-Cpp-2025/cmake-build-debug/CMakeFiles/menedzer_zadan.dir
+C:/Users/TechDay.TS-00029/CLionProjects/Projekt-Cpp-2025/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/TechDay.TS-00029/CLionProjects/Projekt-Cpp-2025/cmake-build-debug/CMakeFiles/rebuild_cache.dir
