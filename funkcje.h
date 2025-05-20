@@ -16,12 +16,13 @@ namespace DomowyMenadzer {
         int priorytet;
     };
 
-    void menu();
     void dodajZadanie(std::vector<Zadanie>& lista);
     void wypiszZadania(const std::vector<Zadanie>& lista);
     void usunZadanie(std::vector<Zadanie>& lista);
     void sortujZadania(std::vector<Zadanie>& lista);
     void wczytajZPliku(const char* nazwa, std::vector<Zadanie>& lista);
+    void zapiszDoPliku(const char* nazwa, const std::vector<Zadanie>& lista);
+    void edytujZadanie(std::vector<Zadanie>& lista);
 
 }
 

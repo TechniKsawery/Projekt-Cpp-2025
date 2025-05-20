@@ -19,7 +19,15 @@ int main(int argc, char* argv[]) {
 
     int wybor;
     do {
-        menu();
+        cout << "\n== Menadżer Zadań Domowych ==\n";
+        cout << "1. Dodaj zadanie\n";
+        cout << "2. Wyświetl zadania\n";
+        cout << "3. Usuń zadanie\n";
+        cout << "4. Sortuj zadania wg priorytetu\n";
+        cout << "5. Edytuj zadanie\n";
+        cout << "6. Zapisz zadania do pliku\n";
+        cout << "7. Wyjście\n";
+        cout << "Wybierz opcję: ";
         cin >> wybor;
         cin.ignore();
 
@@ -37,13 +45,23 @@ int main(int argc, char* argv[]) {
                 sortujZadania(lista);
                 break;
             case 5:
+                edytujZadanie(lista);
+                break;
+            case 6: {
+                string nazwa;
+                cout << "Podaj nazwę pliku do zapisu: ";
+                getline(cin, nazwa);
+                zapiszDoPliku(nazwa.c_str(), lista);
+                break;
+            }
+            case 7:
                 cout << "Koniec programu.\n";
                 break;
             default:
                 cout << "Zły wybór, spróbuj jeszcze raz.\n";
                 break;
         }
-    } while (wybor != 5);
+    } while (wybor != 7);
 
     return 0;
 }

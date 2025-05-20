@@ -41,7 +41,7 @@ namespace DomowyMenadzer {
         }
 
         for (Indeks i = 0; i < lista.size(); i++) {
-            cout << i+1 << ". " << lista[i].opis << " (priorytet: " << lista[i].priorytet << ")\n";
+            cout << i + 1 << ". " << lista[i].opis << " (priorytet: " << lista[i].priorytet << ")\n";
         }
     }
 
@@ -87,6 +87,41 @@ namespace DomowyMenadzer {
         }
 
         cout << "Wczytano dane z pliku.\n";
+    }
+
+    void zapiszDoPliku(const char* nazwa, const vector<Zadanie>& lista) {
+        ofstream plik(nazwa);
+        if (!plik) {
+            cout << "Nie mogę otworzyć pliku do zapisu: " << nazwa << endl;
+            return;
+        }
+        for (const auto& z : lista) {
+            plik << z.opis << endl;
+            plik << z.priorytet << endl;
+        }
+        cout << "Zapisano dane do pliku.\n";
+    }
+
+    void edytujZadanie(vector<Zadanie>& lista) {
+        if (lista.empty()) {
+            cout << "Brak zadań do edycji.\n";
+            return;
+        }
+        wypiszZadania(lista);
+        cout << "Podaj numer zadania do edycji: ";
+        Indeks nr;
+        cin >> nr;
+        cin.ignore();
+        if (nr > 0 && nr <= lista.size()) {
+            cout << "Nowy opis zadania: ";
+            getline(cin, lista[nr - 1].opis);
+            cout << "Nowy priorytet (1-10): ";
+            cin >> lista[nr - 1].priorytet;
+            cin.ignore();
+            cout << "Zadanie zaktualizowane.\n";
+        } else {
+            cout << "Zły numer.\n";
+        }
     }
 
 }
